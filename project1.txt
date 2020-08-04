@@ -1,0 +1,48 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		System.out.println("1.Addition");
+		System.out.println("2.Subtraction");
+		System.out.println("3.Multiplication");
+		System.out.println("4.Division");
+		Scanner s=new Scanner(System.in);
+		System.out.println("choose the operation");
+		int n=s.nextInt();
+		Scanner p=new Scanner(System.in);
+		System.out.println("Enter the 1st number:");
+		int a=p.nextInt();
+		Scanner q=new Scanner(System.in);
+		System.out.println("Enter the 2nd number:");
+		int b=q.nextInt();
+		if(n==1)
+		{
+		    int Answer = a+b;
+		    System.out.println("the answer is: "+Answer);
+		}
+		else if(n==2)
+		{
+		    int Answer = a-b;
+		    System.out.println("the answer is: "+Answer);
+		}
+		else if(n==3)
+		{
+		    int Answer = a*b;
+		    System.out.println("the answer is: "+Answer);
+		}
+		else if(n==4)
+		{
+		    int Answer = a/b;
+		    int ans=a%b;
+		    System.out.println("the quotient is: "+Answer);
+		    System.out.println("the remainder is: "+ans);
+		}
+		else
+		{
+		    System.out.println("invalid entry");
+		}
+		
+	}
+}
+
